@@ -5,10 +5,11 @@ public class Persona {
     final long cedula;
     String nombre;
     static int totalPersonas;
+    static int cedulaDefault;
     
     static {
         totalPersonas = 0;
-        cedula = 3;
+        cedulaDefault = 0;
     }
 
     public Persona(long cedula, String nombre) {
@@ -30,6 +31,15 @@ public class Persona {
     }
 
     public Persona(String nombre) {
+    	this.cedula=cedulaDefault;
+    	cedulaDefault++;
+        this.nombre = nombre;
+        totalPersonas++;
+    }
+    
+    public Persona() {
+    	this.cedula=cedulaDefault;
+    	cedulaDefault++;
         this.nombre = "";
         totalPersonas++;
     }
