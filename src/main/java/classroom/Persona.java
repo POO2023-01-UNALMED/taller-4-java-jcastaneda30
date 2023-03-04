@@ -31,14 +31,14 @@ public class Persona {
     }
 
     public Persona(String nombre) {
-    	this.cedula=cedulaDefault;
+    	this.cedula=1;
     	cedulaDefault++;
         this.nombre = nombre;
         totalPersonas++;
     }
     
     public Persona() {
-    	this.cedula=cedulaDefault;
+    	this.cedula=0;
     	cedulaDefault++;
         this.nombre = "";
         totalPersonas++;
