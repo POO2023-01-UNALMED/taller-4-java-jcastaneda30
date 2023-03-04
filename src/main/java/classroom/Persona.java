@@ -2,7 +2,7 @@ package classroom;
 
 public class Persona {
 
-    long cedula;
+    long cedula=0;
     String nombre;
     static int totalPersonas;
     static int cedulaDefault;
